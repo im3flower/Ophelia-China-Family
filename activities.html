@@ -768,6 +768,54 @@
                 width: 100%;
             }
         }
+        /* Song card styles for activities page */
+        .song-cards {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+
+        .song-card {
+            width: 220px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            overflow: hidden;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+
+        .song-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(78,154,241,0.12);
+        }
+
+        .song-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .song-card .meta {
+            padding: 12px;
+        }
+
+        .song-card .title {
+            font-weight: 700;
+            color: #fff;
+            margin-bottom: 6px;
+            font-size: 1rem;
+        }
+
+        .song-card .artist {
+            color: #c6c6d6;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
@@ -810,9 +858,32 @@
 
         <section id="activities">
             <h2>
-                前面的区域以后再来探索吧~
+                恭喜JB组合全进狮厂！！
+                <br>祝中国md蒸蒸日上
             </h2>
-            <p></p>
+
+            <div class="song-cards">
+                <!-- Song 1: IN TIME (ID: 3314195049) -->
+                <a class="song-card" href="https://music.163.com/song?id=3314195049" target="_blank" rel="noopener noreferrer">
+                    <img src="https://p1.music.126.net/iYzvcTWpzhFCfKwZ6YHDqg==/109951172290544015.jpg" alt="IN TIME cover">
+                    <div class="meta">
+                        <div class="title">IN TIME</div>
+                        <div class="artist">Bumpÿ</div>
+                    </div>
+                </a>
+
+                <!-- Song 2: Alaska (JerScO Remix) (ID: 2635803843) -->
+                <a class="song-card" href="https://music.163.com/song?id=2635803843" target="_blank" rel="noopener noreferrer">
+                    <img src="https://p1.music.126.net/KpQOe0CTO9V_RcG6JD8gUw==/109951170037090082.jpg" alt="Alaska (JerScO Remix) cover">
+                    <div class="meta">
+                        <div class="title">Alaska (JerScO Remix)</div>
+                        <div class="artist">JerScO</div>
+                    </div>
+                </a>
+            </div>
+
+        <br>
+        <p>美哭了</p>    
         </section>
 
 
